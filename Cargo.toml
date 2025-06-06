@@ -1,0 +1,14 @@
+[package]
+name = "rust_os"
+edition = "2018"
+version = "0.1.0"
+authors = ["Mateus Araujo <mateus0santiago@proton.me"]
+
+[dependencies]
+bootloader = "0.9"
+
+[profile.dev]
+panic = "abort" # disable statck unwinding on panic
+
+[profile.release]
+panic = "abort" # disable statck unwinding on panic
